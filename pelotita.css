@@ -1,0 +1,32 @@
+@keyframes movimiento {
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(300px);}
+	100%{transform: translateY(0px);}
+ }
+ @keyframes mov_sombra {
+ 	0%{background: #b7b5c2; width: 125ps}
+	50%{background: #2e2d32; width: 300px;}
+	100%{background: #b7b5c2; width: 125px;}
+ }
+.pelota {
+	background: #6695e8;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left:300px;
+	z-index: 2;
+	animation: movimiento 2s linear infinite; 
+}
+.sombra {
+	background: #b7b5c2;
+	width: 125px;
+	height: 70px;
+	border-radius: 100%;
+	position: absolute;
+	top: 450px;
+	left: 338px;
+	z-index: 1;
+	animation: mov_sombra 2s linear infinite;
+}
